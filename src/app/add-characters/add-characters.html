@@ -4,34 +4,34 @@
 </header>
 
 <div class="form-wrapper">
-  <form (ngSubmit)="agregarPersonaje()">
+  <form (ngSubmit)="addCharacter()">
     <!--eto a la izquielda -->
     <div class="form-col">
       <label for="image">Imagen</label>
       <input type="file" id="image" (change)="onFileSelected($event)" />
 
       <label for="level">Nivel</label>
-      <input type="number" id="level" [(ngModel)]="personaje.level" name="level" required />
+      <input type="number" id="level" [(ngModel)]="character.level" name="level" required />
 
       <label for="power">Poder</label>
-      <input type="number" id="power" [(ngModel)]="personaje.power" name="power" required />
+      <input type="number" id="power" [(ngModel)]="character.power" name="power" required />
 
       <label for="life">Vida</label>
-      <input type="number" id="life" [(ngModel)]="personaje.life" name="life" required />
+      <input type="number" id="life" [(ngModel)]="character.life" name="life" required />
     </div>
     <!--eto a la derecha xd -->
     <div class="form-col">
       <label for="defense">Defensa</label>
-      <input type="number" id="defense" [(ngModel)]="personaje.defense" name="defense" required />
+      <input type="number" id="defense" [(ngModel)]="character.defense" name="defense" required />
 
       <label for="attack">Ataque</label>
-      <input type="number" id="attack" [(ngModel)]="personaje.attack" name="attack" required />
+      <input type="number" id="attack" [(ngModel)]="character.attack" name="attack" required />
 
       <label for="damage">Daño</label>
-      <input type="number" id="damage" [(ngModel)]="personaje.damage" name="damage" required />
+      <input type="number" id="damage" [(ngModel)]="character.damage" name="damage" required />
 
       <label for="description">Descripción</label>
-      <textarea id="description" [(ngModel)]="personaje.description" name="description"></textarea>
+      <textarea id="description" [(ngModel)]="character.description" name="description"></textarea>
     </div>
 
     <button type="submit" class="submit-btn">Guardar Personaje</button>
